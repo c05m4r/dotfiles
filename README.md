@@ -82,7 +82,7 @@ Lynx es un navegador de texto para la World Wide Web.
 * [w3m](http://w3m.sourceforge.net/)
 ##### Ayuda
 * [Interesante discusión sobre navergadores](https://www.reddit.com/r/commandline/comments/6ck33i/comparing_textmode_browsers_lynx_vs_links_vs/)
-##Administradores de Ventanas (WM)
+## Administradores de Ventanas (WM)
 #### Qtile
 Un administrador de ventanas de mosaico con todas las funciones escritas y configuradas en Python.
 * [qtile](https://github.com/qtile/qtile)
