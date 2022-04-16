@@ -1,11 +1,27 @@
-# Personalizacion realizada en Ubuntu
-## Fuentes
-Para evitar conflictos instalar Nerd Fonts, Powerline, Awesome. Nerd Fonts incluye estas últimas.
+## Personalizacion realizada en Ubuntu
+<!-- ## Fuentes -->
+<details>
+<summary>Fuentes</summary>
+    
+> Para evitar conflictos instalar Nerd Fonts, Powerline, Awesome. Nerd Fonts incluye estas últimas.
 * [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md)
 * [Powerline](https://github.com/powerline/fonts)
 * [Awesome](https://github.com/FortAwesome/Font-Awesome)
-## Terminal
-### Shell
+#### Otras fuentes
+* [Devicons](https://github.com/vorillaz/devicons)
+* [Octicons](https://github.com/primer/octicons)
+* [Powerline Extra](https://github.com/ryanoasis/powerline-extra-symbols)
+* [Weather](https://github.com/erikflowers/weather-icons)
+* [Font](https://github.com/lukas-w/font-logos)
+* [Awesome Extension](https://github.com/AndreLZGava/font-awesome-extension)
+</details>
+<!-- ## Terminal -->
+<details>
+<summary>Terminal</summary>
+<!-- ### Shell -->
+<details>
+<summary>Shell</summary>
+
 #### Oh My Bash
 Un framework para administrar las configuraciones del interprete BASH facilmente.
 * [OhMyBash](https://github.com/ohmybash/oh-my-bash)
@@ -15,20 +31,32 @@ Un framework para administrar las configuraciones del interprete ZSH facilmente.
 #### Oh My Fish
 Un framework para administrar las configuraciones del interprete Fish facilmente.
 * [OhMyFish](https://github.com/oh-my-fish/oh-my-fish)
-### Emuladores
+</details>
+<!-- ### Emuladores -->
+<details>
+<summary>Emuladores</summary>
+
 #### Alacritty
 Un ligero emulador de terminal acelerado por GPU desarrollado en Rust.
 * [alacritty](https://github.com/alacritty/alacritty)
 #### Kitty
 Un ligero emulador de terminal acelerado por GPU desarrollado en Python y C.
 * [kitty](https://github.com/kovidgoyal/kitty)
-##### Ayuda
-Establecer alacritty como terminal por defecto.
+<!-- ##### Ayuda -->
+<details>
+<summary>Ayuda</summary>
+
+> Establecer alacritty como terminal por defecto.
 ```bash
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/alacritty 50
 sudo update-alternatives --config x-terminal-emulator
 ```
-### Editores de texto
+</details>
+</details>
+<!-- ### Editores de texto -->
+<details>
+<summary>Editores de texto</summary>
+
 #### Xi-Editor
 Un moderno editor de text con un backend escrito en Rust.
 * [xi](https://xi-editor.io/)
@@ -53,19 +81,31 @@ Un fork de Vim refactorizado en búsqueda de la extensibilidad y simplificar el 
 * [Añade Plugins a Vim](https://github.com/junegunn/vim-plug)
 * [Multicursores en Vim?](https://github.com/terryma/vim-multiple-cursors)
 * [Volver a Vim inteligente](https://github.com/neoclide/coc.nvim)
-##### Ayuda
-Para reparar neovim ingresar el siguiente comando y seguir las instrucciones.
+<!-- ##### Ayuda -->
+<details>
+<summary>Ayuda</summary>
+
+> Para reparar neovim ingresar el siguiente comando y seguir las instrucciones.
 ```vim
 :checkhealth
 ```
-### Administradores de Archivos
+</details>
+</details>
+<!-- ### Administradores de Archivos -->
+<details>
+<summary>Administradores de Archivos</summary>
+
 #### Midnight Commander
 GNU Midnight Commander es un shell de usuario con interfaz en modo texto para administrar archivos.
 * [mc](https://github.com/MidnightCommander/mc)
 #### XFE
 X File Explorer es un administrador de archivos similar a MS-Explorer para X.
 * [xfe](https://sourceforge.net/projects/xfe/)
-### Navegadores
+</details>
+<!-- ### Navegadores -->
+<details>
+<summary>Navegadores</summary>
+
 #### ELinks
 Es un navegador WWW en modo texto, compatible con colores, representación de tablas, descarga en segundo plano, interfaz de configuración basada en menús, navegación con pestañas y código reducido.
 * [elinks](https://linux.die.net/man/1/elinks)
@@ -80,18 +120,25 @@ Lynx es un navegador de texto para la World Wide Web.
 * [edbrowse](http://edbrowse.sourceforge.net/)
 * [netrik](http://netrik.sourceforge.net/)
 * [w3m](http://w3m.sourceforge.net/)
-##### Ayuda
 * [Interesante discusión sobre navergadores](https://www.reddit.com/r/commandline/comments/6ck33i/comparing_textmode_browsers_lynx_vs_links_vs/)
-## Administradores de Ventanas (WM)
+</details>
+</details>
+<!-- ## Administradores de Ventanas (WM) -->
+<details>
+<summary>Administradores de Ventanas (WM)</summary>
+
 #### Qtile
 Un administrador de ventanas de mosaico con todas las funciones escritas y configuradas en Python.
 * [qtile](https://github.com/qtile/qtile)
-##### Ayuda
-Si instalas desde el código fuente, crear el siguiente enlace simbólico.
+<!-- ##### Ayuda -->
+<details>
+<summary>Ayuda</summary>
+
+> Si instalas desde el código fuente, crear el siguiente enlace simbólico.
 ```bash
 ln -s ~/.local/bin/qtile /usr/bin/qtile 
 ```
-Para poder seleccionar qtile en lightdm crear este [archivo](https://github.com/qtile/qtile/blob/master/resources/qtile.desktop).
+> Para poder seleccionar qtile en lightdm crear este [archivo](https://github.com/qtile/qtile/blob/master/resources/qtile.desktop).
 ```bash
 sudo echo -e "\
 [Desktop Entry]\
@@ -102,11 +149,16 @@ sudo echo -e "\
 \nKeywords=wm;tiling"\
 >> /usr/share/xsessions/qtile.desktop
 ```
-Para ejecutar autostart.sh, se deben dar permisos de ejecucion al script.
+> Para ejecutar autostart.sh, se deben dar permisos de ejecucion al script.
 ```bash
 sudo chmod +x ~/dotfiles/autostart.sh
 ```
-## Otras Herramientas
+</details>
+</details>
+<!-- ## Otras Herramientas -->
+<details>
+<summary>Otras Herramientas</summary>
+
 #### BAT
 Un clon de cat pero mucho mas elegante.
 * [bat](https://github.com/sharkdp/bat/)
@@ -137,7 +189,11 @@ Un visor de imágenes X11 dirigido principalmente a usuarios de consolas.
 #### Nitrogen
 Navegador de fondo y setter para X windows.
 * [nitrogen](https://github.com/l3ib/nitrogen/)
-## Personalización
+</details>
+<!-- ## Personalización -->
+<details>
+<summary>Personalización</summary>
+
 #### Bumblebee
 Es un generador de línea de estado modular y compatible con temas para el administrador de ventanas i3.
 * [bumblebee](https://github.com/tobi-wan-kenobi/bumblebee-status)
@@ -153,3 +209,4 @@ Es un compositor para X y un fork de Compton.
 #### Compton
 Es un compositor para X. Es un fork de xcompmgr de Dana Jansens y se refactorizó.
 * [compton](https://github.com/chjj/compton/)
+</details>
