@@ -130,6 +130,15 @@ Lynx es un navegador de texto para la World Wide Web.
 #### Qtile
 Un administrador de ventanas de mosaico con todas las funciones escritas y configuradas en Python.
 * [qtile](https://github.com/qtile/qtile)
+
+#### Otros WM
+* [awesome](https://awesomewm.org/)
+* [i3](https://i3wm.org/)
+* [openbox](http://openbox.org/wiki/Main_Page)
+* [i3-gaps](https://github.com/Airblader/i3)
+* [xmonad](https://xmonad.org/)
+* [dwm](https://dwm.suckless.org/)
+* [spectrwm](https://github.com/conformal/spectrwm#readme)
 <!-- ##### Ayuda -->
 <details>
 <summary>Ayuda</summary>
@@ -153,6 +162,9 @@ sudo echo -e "\
 ```bash
 sudo chmod +x ~/dotfiles/autostart.sh
 ```
+> Para salvar problemas con xbacklight y teclas de brillo [LEER](https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder#715310)
+
+> Ver personalizacion de [Antonio Sarosi](https://github.com/antoniosarosi/dotfiles/tree/master/.config/qtile)
 </details>
 </details>
 <!-- ## Otras Herramientas -->
@@ -200,6 +212,7 @@ Es un generador de línea de estado modular y compatible con temas para el admin
 #### Conky
 Es un monitor de sistema liviano y gratuito para X, que muestra cualquier tipo de información en su escritorio.
 * [conky](https://github.com/brndnmtthws/conky)
+> Se recomienda leer **README.md** en **~/dotfiles/.config/conky**.
 #### Polybar
 Una barra de estado rápida y fácil de usar. Polybar tiene como objetivo ayudar a los usuarios a crear barras de estado hermosas y altamente personalizables para su entorno de escritorio, sin la necesidad de tener un cinturón negro en scripts de shell.
 * [polybar](https://github.com/polybar/polybar)
