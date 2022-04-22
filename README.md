@@ -1,4 +1,6 @@
 ## Personalizacion realizada en Ubuntu
+
+![Screen](/src/Screenshot%20from%202022-04-22%2017-31-27.png)
 <!-- ## Fuentes -->
 <details>
 <summary>Fuentes</summary>
