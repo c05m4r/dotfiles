@@ -23,10 +23,62 @@ Es creado cubrir imperfectos de Crux:
 * Su instalación no es sencilla pero es garante de una experiencia satisfactoria.
 
 ### ¿Qué lo diferencia?
-* Rolling Release
-* Repositorios
-* Pacman
-* Comunidad
+<details>
+<summary>Rolling Release</summary>
+
+* Es una distribución de lanzamiento continuo, siendo la antítesis de
+Software Versioning, es un sistema de software en constante actualización.
+* Utilizar una distribución rolling-release implica tener siempre actualizado los repositorios, lográndose por pequeñas y frecuentes actualizaciones.
+</details>
+
+<details>
+<summary>Repositorios</summary>
+
+> Cantidad de paquetes aproximada buscada el 2022/05/17.
+
+> Debian posee 59000 paquetes en sus repositorios oficiales.
+* Se encuentran repositorios oficiales y no oficiales, AUR, donde hay paquetes incorporados por usuarios.
+* AUR cuenta con una cantidad de 74752 paquetes. 
+* En los oficiales encontramos 12872 paquetes clasificados en:
+    1) core
+    2) extra
+    3) community
+    4) multilib
+    5) testing
+    6) community-testing
+    7) multilib-testing
+* Al construir un paquete o votar hay disponibles tres solicitudes que se pueden presentar:
+    1) Solicitud de eliminación.
+    2) Solicitud de orfandad
+    3) Solicitud de unión
+</details>
+
+<details>
+<summary>Pacman</summary>
+
+> Una dependencia es aquel paquete requerido con antelación para poder concretar una posterior.
+* Es un gestor de paquetes permitiendo compilar paquetes y resolver dependencias.
+* El mismo fue creado con la intención de terminar con el infierno de dependencias (dependency hell) de RPM en aquel momento.
+* Es sólo una pequeña parte del sistema de administración de paquetes debido a que las demás tareas son llevadas a cabo por ABS, Sistema de Construcción de Arch (Arch Build System).
+* ABS es un conjunto de herramientas tales como PKGBUILD, makepkg y pacman, donde pacman es completamente independiente pero necesita ser invocado por makepkg para actuar.
+*  Un paquete en AUR posee un archivo llamado PKGBUILD, un script de bash, que posee la dirección del código fuente, instrucciones de compilación.
+* Los paquetes se compilan por makepkg, que pertenece al paquete Pacman.
+</details>
+
+<details>
+<summary>Comunidad</summary>
+
+* Con número de 1,980,057 publicaciones en el foro de Arch, un fuerte código de conducta, una diversa cantidad de comunidades internacionales y una wiki que lo tiene todo; vuelven a los Archers protagonistas de este pequeño proyecto.
+* En la comunidad se destacan los siguientes roles:
+    1) Developer
+    2) Trusted User
+    3) Arch Tester
+    4) Arch Security Tracker
+    5) Moderadores de contenido
+    6) ArchWiki maintainer
+    7) ArchWiki translator
+* Existen eventos destinados a la participación masiva de los usuarios en tareas de mantenimiento, entre estos Bug Day y AUR Cleanup Day.
+</details>
 
 ## ¿Cómo se instala?
 <details>
@@ -66,6 +118,7 @@ Usar alguno de los siguientes scripts de instalación:
 <details>
 <summary>Avanzado</summary>
 
+La instalación se realizará haciendo uso de [pacstrap](https://man.archlinux.org/man/pacstrap.8) y [archiso](https://wiki.archlinux.org/title/Archiso). 
 ```bash
 loadkeys la-latin1
 localectl list-keymaps
@@ -143,9 +196,8 @@ sudo yay -S pamac-aur
 ```
 > yay está desarrollado en go, otra alternativa interesante es paru, desarrollada en Rust
 
-* Instalación de snap
+* Instalación de [snap](https://snapcraft.io/docs)
 ```bash
-#https://snapcraft.io/docs
 git clone https://aur.archlinux.com/snapd.git
 cd snapd
 makepkg -si
@@ -154,17 +206,16 @@ sudo ln -s /var/lib/snapd/snap /snap
 sudo snap install brave
 ```
 
-* Instalación de qtile y configuración
+* Instalación de qtile y [configuración](https://github.com/c05m4r/dotfiles#readme)
 ```bash
-#https://github.com/c05m4r/dotfiles#readme
-#ohmybash, powerline, awesomefonts
-#configuro archivos con repo de dotfiles
 neovim .config/qtile/config.py
 ```
+> configuro archivos con repo de dotfiles, preparo ohmybash, powerline, awesomefonts
 </details>
 
 ## Recursos
 * [ArchWiki](https://wiki.archlinux.org/)
+* [Arch Forum](https://bbs.archlinux.org/)
 * [Gitlab](https://gitlab.archlinux.org/archlinux)
 * [Arch32](https://archlinux32.org/)
 * [ArchARM](https://archlinuxarm.org/)
