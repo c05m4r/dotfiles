@@ -24,4 +24,4 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 #configure
 dnf clean all
 dnf autoremove -y
-#oh-my-bash, nerd-fonts, megasync, google-chrome, vlc
+#oh-my-bash, nerd-fonts, megasync, google-chrome, vlc, wacom-firmware
