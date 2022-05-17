@@ -129,13 +129,12 @@ function cpu_up(){
 function kb(){
     setxkbmap latam
 }
-kb
 
 alias cat="bat"
-alias ls="lsd"
+alias ls="lsd -lai"
 alias sauu="sudo apt update -y && sudo apt upgrade -y"
+alias sduu="sudo dnf update -y && dnf upgrade -y --refresh"
 
-export PATH=$PATH:/usr/local/go/bin
-. "$HOME/.cargo/env"
-source /home/c05m4r/GIT/alacritty/extra/completions/alacritty.bash
-
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
