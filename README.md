@@ -1,6 +1,8 @@
-## Personalizacion realizada en Ubuntu
+## Dotfiles
+> Personalizacion realizada en Arch, Fedora y Ubuntu
 
-![Screen](/src/Screenshot%20from%202022-04-22%2017-31-27.png)
+> Ver screenshots en src/
+
 <!-- ## Fuentes -->
 <details>
 <summary>Fuentes</summary>
