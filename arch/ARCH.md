@@ -113,6 +113,7 @@ gpg --keyserver-options auto-key-retrieve --verify archlinux-2022.04.05-x86_64.i
 
 Usar alguno de los siguientes scripts de instalación:
 * [CodigoCristo](https://github.com/CodigoCristo/arcris)
+* [Archinstall](https://wiki.archlinux.org/title/Archinstall)
 </details>
 
 <details>
