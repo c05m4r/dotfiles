@@ -114,6 +114,25 @@ gpg --keyserver-options auto-key-retrieve --verify archlinux-2022.04.05-x86_64.i
 Usar alguno de los siguientes scripts de instalación:
 * [CodigoCristo](https://github.com/CodigoCristo/arcris)
 * [Archinstall](https://wiki.archlinux.org/title/Archinstall)
+
+O simplemente importar la VM en:
+* [Descarga](https://drive.google.com/drive/folders/1LY-gaM_S8jYhHSml3DpK7-oUq0iXyNk4?usp=sharing)
+> Se encuentra en formato .ova y se usó [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
+<details>
+<summary>Ayuda</summary>
+
+Verificar la integridad
+```bash
+echo "ab472994bf3f875a8fd262391455bb2f213a143daa6bb9aaf494f6595f2301b8 Arch.ova" | sha256sum -c
+```
+
+Solucionar problemas con la resolución de pantalla
+```bash
+xrandr
+xrandr -s <resolucion> #e.g. xrandr -s 1366x768
+reboot
+```
+</details>
 </details>
 
 <details>
