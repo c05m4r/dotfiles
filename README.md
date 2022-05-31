@@ -168,6 +168,13 @@ sudo chmod +x ~/dotfiles/autostart.sh
 ```
 > Para salvar problemas con xbacklight y teclas de brillo [LEER](https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder#715310)
 
+> Para salvar: HDMI "No Signal" [LEER](https://9to5linux.com/how-to-connect-your-laptop-to-an-external-monitor-on-linux-fix-for-hdmi-no-signal-issue)
+```bash
+glxinfo | egrep "OpenGL vendor|OpenGL renderer"
+sudo cp -p /usr/share/X11/xorg.conf.d/10-amdgpu.conf /etc/X11/xorg.conf.d/10-amdgpu.conf
+```
+> o puede salvarse instalando [xcompmgr](https://gitlab.freedesktop.org/xorg/app/xcompmgr/)
+
 > Ver personalizacion de [Antonio Sarosi](https://github.com/antoniosarosi/dotfiles/tree/master/.config/qtile)
 </details>
 </details>
