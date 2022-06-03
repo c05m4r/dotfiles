@@ -99,6 +99,9 @@ Un fork de Vim refactorizado en búsqueda de la extensibilidad y simplificar el 
 <details>
 <summary>Administradores de Archivos</summary>
 
+#### Ranger
+A VIM-inspired filemanager for the console. See [ueberzug](https://github.com/seebye/ueberzug#installation) plugin.
+* [ranger](https://github.com/ranger/ranger)
 #### Midnight Commander
 GNU Midnight Commander es un shell de usuario con interfaz en modo texto para administrar archivos.
 * [mc](https://github.com/MidnightCommander/mc)
@@ -178,6 +181,27 @@ sudo cp -p /usr/share/X11/xorg.conf.d/10-amdgpu.conf /etc/X11/xorg.conf.d/10-amd
 > Ver personalizacion de [Antonio Sarosi](https://github.com/antoniosarosi/dotfiles/tree/master/.config/qtile)
 </details>
 </details>
+<!-- ## Gestores de Inicio de Sesión (DM) -->
+<details>
+<summary>Gestores de Inicio de Sesión (DM)</summary>
+
+#### ly
+Display manager with console UI
+* [ly](https://github.com/fairyglade/ly)
+#### GNOME Display Manager (GDM)
+The GNOME Display Manager (GDM) is a program that manages graphical display servers and handles graphical user logins.
+* [gdm](https://wiki.gnome.org/Projects/GDM)
+#### Light Display Manager (LightDM)
+* [ldm](https://github.com/canonical/lightdm)
+#### Lightwight Display Manager (LXDM)
+Lightweight display manager for the LXDE desktop environment.
+* [lxdm](https://wiki.lxde.org/)
+#### Simple Desktop Display Manager (SDDM)
+QML based X11 and Wayland display manager
+* [sddm](https://github.com/sddm/sddm)
+> [Otros DM recomendados.](https://wiki.archlinux.org/title/Display_manager)
+</details>
+
 <!-- ## Otras Herramientas -->
 <details>
 <summary>Otras Herramientas</summary>
@@ -212,6 +236,9 @@ Un visor de imágenes X11 dirigido principalmente a usuarios de consolas.
 #### Nitrogen
 Navegador de fondo y setter para X windows.
 * [nitrogen](https://github.com/l3ib/nitrogen/)
+#### Azote
+Wallpaper and colour manager for Sway, i3 and some other WMs.
+* [azote](https://github.com/nwg-piotr/azote)
 </details>
 <!-- ## Personalización -->
 <details>
