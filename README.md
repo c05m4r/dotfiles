@@ -57,6 +57,38 @@ sudo update-alternatives --config x-terminal-emulator
 ```
 </details>
 </details>
+
+<!-- ### Screensavers -->
+<details>
+<summary>Screensavers</summary>
+
+#### cmatrix
+Terminal based "The Matrix" like implementation.
+* [cmatrix](https://github.com/abishekvashok/cmatrix)
+#### pipes.sh
+Animated pipes terminal screensaver.
+* [pipes.sh](https://github.com/pipeseroni/pipes.sh)
+#### pipes.c
+Small application to mimic the "pipes" screensaver in a terminal window.
+* [pipes.c](https://github.com/pipeseroni/pipes.c)
+#### snakes.pl
+Pipes-like terminal screensaver implemented in perl.
+* [snakes.pl](https://github.com/pipeseroni/snakes.pl)
+#### maze.py
+Simple curses pipes written in Python.
+* [maze.py](https://github.com/pipeseroni/maze.py)
+#### pipesX.sh
+Animated pipes terminal screensaver at an angle.
+* [pipesX.sh](https://github.com/pipeseroni/pipesX.sh)
+#### weave.sh
+Weaving in terminal
+* [weave.sh](https://github.com/pipeseroni/weave.sh)
+#### hollywood
+* [hollywood](https://github.com/dustinkirkland/hollywood)
+#### oneko
+The program oneko creates a cute cat chasing around your mouse cursor.
+* [oneko](http://www.daidouji.com/oneko/)
+</details>
 <!-- ### Editores de texto -->
 <details>
 <summary>Editores de texto</summary>
@@ -185,20 +217,20 @@ sudo cp -p /usr/share/X11/xorg.conf.d/10-amdgpu.conf /etc/X11/xorg.conf.d/10-amd
 <details>
 <summary>Gestores de Inicio de Sesión (DM)</summary>
 
-#### ly
-Display manager with console UI
-* [ly](https://github.com/fairyglade/ly)
 #### GNOME Display Manager (GDM)
 The GNOME Display Manager (GDM) is a program that manages graphical display servers and handles graphical user logins.
 * [gdm](https://wiki.gnome.org/Projects/GDM)
-#### Light Display Manager (LightDM)
-* [ldm](https://github.com/canonical/lightdm)
 #### Lightwight Display Manager (LXDM)
 Lightweight display manager for the LXDE desktop environment.
 * [lxdm](https://wiki.lxde.org/)
 #### Simple Desktop Display Manager (SDDM)
 QML based X11 and Wayland display manager
 * [sddm](https://github.com/sddm/sddm)
+#### Light Display Manager (LightDM)
+* [ldm](https://github.com/canonical/lightdm)
+#### ly
+Display manager with console UI
+* [ly](https://github.com/fairyglade/ly)
 > [Otros DM recomendados.](https://wiki.archlinux.org/title/Display_manager)
 </details>
 
