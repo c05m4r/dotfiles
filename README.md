@@ -46,6 +46,9 @@ Un ligero emulador de terminal acelerado por GPU desarrollado en Rust.
 #### Kitty
 Un ligero emulador de terminal acelerado por GPU desarrollado en Python y C.
 * [kitty](https://github.com/kovidgoyal/kitty)
+#### Cool Retro Term
+A good looking terminal emulator which mimics the old cathode display...
+* [cool-retro-term](https://github.com/Swordfish90/cool-retro-term)
 <!-- ##### Ayuda -->
 <details>
 <summary>Ayuda</summary>
