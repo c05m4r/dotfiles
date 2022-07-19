@@ -134,6 +134,7 @@ alias cat="bat"
 alias ls="lsd -lai"
 alias sauu="sudo apt update -y && sudo apt upgrade -y"
 alias sduu="sudo dnf update -y && sudo dnf upgrade -y --refresh"
+alias spu="sudo pacman -Syyu"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

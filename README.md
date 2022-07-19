@@ -12,6 +12,7 @@
 * [Powerline](https://github.com/powerline/fonts)
 * [Awesome](https://github.com/FortAwesome/Font-Awesome)
 #### Otras fuentes
+* [Cascadia Code](https://github.com/microsoft/cascadia-code)
 * [Devicons](https://github.com/vorillaz/devicons)
 * [Octicons](https://github.com/primer/octicons)
 * [Powerline Extra](https://github.com/ryanoasis/powerline-extra-symbols)
@@ -259,6 +260,9 @@ Mixer para Alsa, un driver de tarjetas de sonido, con ncurses como interfaz.
 #### NMCLI
 Una herramienta de linea de comandos para controlar NetworkManager y obtener su estado.
 * [nmcli](https://linux.die.net/man/1/nmcli)
+#### IWD
+iNet Wireless Daemon project aims to provide a comprehensive Wi-Fi connectivity solution for Linux based devices.
+* [iwd](https://iwd.wiki.kernel.org/)
 #### FZF
 A command-line fuzzy finder.
 * [fzf](https://github.com/junegunn/fzf)
