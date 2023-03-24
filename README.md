@@ -1,7 +1,6 @@
 ## Dotfiles
-> Personalizacion realizada en Arch, Fedora y Ubuntu
 
-> Ver screenshots en src/
+> Personalizacion realizada en Arch, Fedora y Ubuntu
 
 <!-- ## Fuentes -->
 <details>
@@ -315,3 +314,5 @@ Es un compositor para X y un fork de Compton.
 Es un compositor para X. Es un fork de xcompmgr de Dana Jansens y se refactorizó.
 * [compton](https://github.com/chjj/compton/)
 </details>
+
+> Ver screenshots en src/

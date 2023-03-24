@@ -1,0 +1,52 @@
+﻿salir del modo insertar = ESC;
+irse a una linea = :NUM;
+cerrar sin guardar= :q!;
+guardar = :w;
+cerrar = :q;
+
+izquierda, abajo, arriba, derecha = h, j, k, l;
+fin de palabra = e;
+principio de palabra = w;
+principio de palabra anterior = b;
+principo de linea = 0;
+final de linea = $;
+inicio de archivo = gg;
+fin de archivo = G;
+
+modo visual = v; (para seleccionar)
+copiar = y;
+copiar linea = y;
+pegar linea = p;
+
+cortar = x;
+cortar palabra = dw;
+cortar linea = dd;
+cortar lo que este a la derecha del cursor = d$;
+
+deshacer = u;
+rehacher = CRTL r;
+reemplazar letra = r;
+modo reemplazar = R;
+reemplazar ocurrencia desde el cursor = :s/cadena_a_reemplazar/su_reemplazo;
+reemplazar ocurrencias de todo el archivo = :%s/cadena_a_reemplazar/su_reemplazo g; (agregar c para el modo guiado) 
+cambiar palabra = ciw;
+
+insertar = i;
+insertar antes del cursos = a;
+insertar a fin de linea = A;
+
+marcar una palabra = gd;
+navergar entre archivo/definicion = gf;
+volver hacia atras/adelante en la navegacion= CTRL o, CRTL i;
+buscar frase luego del cursor = /texto_a_buscar;
+buscar frase antes del cursos = ?texto_a_buscar;
+siguiente ocurrencia = n;
+anterior ocurrencia = N;
+moverse entre parentesis/corchetes/llaves = %;
+
+Cómo NO usar multicursores en VIM
+Reemplazar una palabra
+1 Buscar texto a reemplazar con /palabra
+2 Con cgn reemplazamos una palabra por otra
+3 Con n y N nos desplazamos a la siguiente coincidencia
+4 Con . repetimos la ultima accion realizada

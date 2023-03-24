@@ -1,0 +1,83 @@
+git --version
+
+git help
+
+git config --global user.name "TuNombre"
+
+git config --global user.email "TuCorreo"
+
+git config --globalo user.campo "Informacion"
+
+git config --global -e (ver informacion de usuario, alias(son similares a snippets (atajo))) por medio del editor
+
+git init (crea un directorio .git) inicializando un repositorio local
+
+git status para ver el estado de los archivos (working directory, staging area, respository)
+
+git status -s -b (para ver estado con abreviatura y ramas respectivamente)
+
+git add (pasar de working directory a staging area)
+
+git commit -m "MENSAJE" (pasar de staging area a repository con un comentario rapido)
+
+git commit --amend -m "MENSAJE" (para corregir el ultimo mensaje)
+
+git log (ver registro de commits)
+
+git log --oneline --decorate --all --graph (oneline es para acortar (mostrar solo mensajes)
+
+git reflog (muestra registro de todos los commits aunque hayamos realizado un checkout)
+
+git config --global alias.TuShotcut "Comando y sus atributos"
+
+git reset (mover archivo de staging area a working directory)
+
+git reset --hard ID (retrocede a commit seleccionado por el ID)
+
+touch .gitignore (crea archivo en el cual dentro se especificaran elementos a ignorar del repositorio)
+
+git branch (muestra ramas(forks))
+
+git branch NombreDeRama (crea una rama)
+
+git checkout NombreDeRama (cambia de rama)
+
+git diff (para saber diferencia enter ramas, archivos, commits, etc)
+
+git merge NombreDeRAmas (combinar ramas)
+
+git branch -d NombreDeRama (borrar una rama)
+
+git stash (guarda el estado actual del working directory e index state, algo asi como una screenshot)
+
+git stash list (muestra la lista de stash, --stat (para mas info))
+
+git stash pop (se vuelve al estado del ultimo stash y el mismo es descartado)
+
+git stash apply stash@{x} (se vuelve al estado del stash y sin descartarlo, donde x es el id del mismo)
+
+git stash drop stash@{x} (elimina un stash)
+
+git show stash (info mas detallada)
+
+git stash clear (elimina todos los stash)
+
+git rebase NombreDeRama (luego de ubicarte en una rama con checkout, es posible añadir los cambios de otra con rebase y el nombre de la rama actualizada)
+
+git rebase -i y~x (rebase interactivos, donde x es la cantidad de comits a partir de (y) que es el puntero que generalmente  es HEAD. Sirve para ordenar, separar, corregir y unir commits)
+
+git pull (OPCIONALES -u NombreDeRepo Rama por unica vez) Enlace(para la descarga de un repositorio)
+
+git push (OPCIONALES -u NombreDeRepo Rama por unica vez) Enlace (para la carga de un repo)
+
+git push --tags (sube todos los tags)
+
+git remote add origin Enlace (para añadir un origen remoto, repo) (origin es el nombre del remote, pero este es un estandar)
+
+git remote -v (para ver los origenes)
+
+git clone Enlace
+
+git fetch (similar a push pero a diferencia de este no se realiza un merge durante el mismo)
+
+git tag -a (nuestra version, ej 0.1) (id del commit) -m "mensaje"
