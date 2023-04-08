@@ -65,6 +65,8 @@ sudo update-alternatives --config x-terminal-emulator
 <details>
 <summary>Screensavers</summary>
 
+#### asciiquarium
+* [asciiquarium](https://github.com/cmatsuoka/asciiquarium)
 #### xscreensaver
 XScreenSaver is the standard screen saver collection shipped on most Linux and Unix systems running the X11 Window System.
 * [xscreensaver](https://www.jwz.org/xscreensaver/)
