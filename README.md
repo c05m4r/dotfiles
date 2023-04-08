@@ -65,6 +65,9 @@ sudo update-alternatives --config x-terminal-emulator
 <details>
 <summary>Screensavers</summary>
 
+#### xscreensaver
+XScreenSaver is the standard screen saver collection shipped on most Linux and Unix systems running the X11 Window System.
+* [xscreensaver](https://www.jwz.org/xscreensaver/)
 #### cmatrix
 Terminal based "The Matrix" like implementation.
 * [cmatrix](https://github.com/abishekvashok/cmatrix)
