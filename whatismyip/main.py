@@ -27,14 +27,12 @@ class Singleton:
         self.__public_ip = ip
 
 
-def main():
-    singleton = Singleton()
+def main(obj):
 
     endpoint = 'https://ipinfo.io/json'
     try:
         res = requests.get(endpoint, verify = True)
         data = res.json()
-        singleton.public_ip = data["ip"]
         if res.status_code != 200:
             raise Exception(f'Error: status code {res.status_code}')
     except Exception as e:
@@ -43,15 +41,19 @@ def main():
     
     telegram = Telegram()
 
-    if singleton.public_ip != data["ip"]:
-        msg = f"Your public ip has been changed to {singleton.public_ip}"
+    if obj.public_ip is None:
+        obj.public_ip = data["ip"]
+
+    if obj.public_ip != data["ip"]:
+        msg = f"Your public ip has been changed to {obj.public_ip}"
         telegram.send_message(msg)
 
 
 if __name__ == '__main__':
-    # main()
-    schedule.every(5).minutes.do(main)
+    obj = Singleton()
+    # main(obj)
+    schedule.every(5).minutes.do(main, obj)
 
     while True:
-            schedule.run_pending()
-            time.sleep(1)
+        schedule.run_pending()
+        time.sleep(1)
