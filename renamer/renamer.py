@@ -44,6 +44,7 @@ def renamer(root):
             shutil.copy2(old_path, new_path)
         except FileNotFoundError:
             os.makedirs(f"{pwd}{path}", exist_ok=True)
+            shutil.copy2(old_path, new_path)
        
 def main():
     path = sys.argv[1]
