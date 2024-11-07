@@ -1,0 +1,22 @@
+services:
+  code-server:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    network_mode: bridge
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - PASSWORD=password
+        #- HASHED_PASSWORD= #optional
+        #- SUDO_PASSWORD=password
+        #- SUDO_PASSWORD_HASH= #optional
+        #- DEFAULT_WORKSPACE=/config/workspace #optional
+      - DEFAULT_WORKSPACE=/var/local #optional
+    ports:
+      - 5443:8443
+    volumes:
+      - ./code-server/config:/config
+      - /home:/home
+      - /var/local:/var/local
+
